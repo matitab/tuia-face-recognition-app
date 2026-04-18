@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+output/*
+!output/.gitkeep
+model/*
+!model/.gitkeep
+*.pth
+*.onnx
+data/*
+.DS_Store
