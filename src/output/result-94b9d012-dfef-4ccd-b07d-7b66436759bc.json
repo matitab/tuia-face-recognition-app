@@ -1,0 +1,61 @@
+{
+  "source_path": "C:\\Users\\Usuario\\Desktop\\Proyectos\\tuia-face-recognition-app\\src\\output\\uploads\\up_f2444c7539814b288151bd0d5a6e06e5.jpg",
+  "detections": [
+    {
+      "bbox": [
+        811,
+        1096,
+        2061,
+        2346
+      ],
+      "keypoints": {},
+      "label": "unknown",
+      "score": 0.0
+    },
+    {
+      "bbox": [
+        756,
+        3124,
+        828,
+        3196
+      ],
+      "keypoints": {},
+      "label": "unknown",
+      "score": 0.0
+    },
+    {
+      "bbox": [
+        2186,
+        3169,
+        2274,
+        3257
+      ],
+      "keypoints": {},
+      "label": "unknown",
+      "score": 0.0
+    },
+    {
+      "bbox": [
+        721,
+        2963,
+        790,
+        3032
+      ],
+      "keypoints": {},
+      "label": "unknown",
+      "score": 0.0
+    },
+    {
+      "bbox": [
+        2282,
+        3305,
+        2338,
+        3361
+      ],
+      "keypoints": {},
+      "label": "unknown",
+      "score": 0.0
+    }
+  ],
+  "detected_people": []
+}

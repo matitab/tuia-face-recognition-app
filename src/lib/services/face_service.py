@@ -83,16 +83,32 @@ class FaceService:
         Return a list of tuples with the coordinates of the faces detected in the image.
         """
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
         face_cascade = cv2.CascadeClassifier(
             cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
         )
-        faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)
+
+        faces = face_cascade.detectMultiScale(
+            gray,
+            scaleFactor=1.05,
+            minNeighbors=6,
+            minSize=(80, 80),
+        )
 
         result = []
-        for (x, y, w, h) in faces:
+        h, w = image.shape[:2]
+        min_area = max(80 * 80, int(h * w * 0.01))
+
+        for (x, y, fw, fh) in faces:
+            area = fw * fh
+            if area < min_area:
+                continue
+
             x1, y1 = int(x), int(y)
-            x2, y2 = int(x + w), int(y + h)
+            x2, y2 = int(x + fw), int(y + fh)
             result.append((x1, y1, x2, y2))
+
+        result.sort(key=lambda box: (box[2] - box[0]) * (box[3] - box[1]), reverse=True)
         return result
 
 

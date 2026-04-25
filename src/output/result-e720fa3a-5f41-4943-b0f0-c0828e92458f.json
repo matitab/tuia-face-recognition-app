@@ -1,0 +1,30 @@
+{
+  "source_path": "C:\\Users\\Usuario\\Desktop\\Proyectos\\tuia-face-recognition-app\\src\\output\\uploads\\up_6ae90777293b4eebb23a0c058832632b.jpg",
+  "detections": [
+    {
+      "bbox": [
+        69,
+        253,
+        555,
+        739
+      ],
+      "keypoints": {},
+      "label": "Agustina1",
+      "score": 0.827
+    },
+    {
+      "bbox": [
+        167,
+        653,
+        463,
+        949
+      ],
+      "keypoints": {},
+      "label": "Agustina1",
+      "score": 0.6178
+    }
+  ],
+  "detected_people": [
+    "Agustina1"
+  ]
+}
